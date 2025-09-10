@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Producto</title>
+  <link rel="stylesheet" href="css/Style.css"/>  
+</head>
+<body>
+  <header class="cabecera">
+        <div class="contenedor-cabecera">
+
+            <div class="logo">
+                <img src="img/Logo.png" alt="Logo de Sinaí">
+            </div>
+
+            <div class="barra-busqueda">
+                <img src="img/Lupa.png" alt="Lupa" class="icono-busqueda">
+                <input type="text" placeholder="Buscar..." class="campo-busqueda">
+                <img src="img/Ajustes busqueda.png" alt="Ajustes de búsqueda" class="ajustes-busqueda">
+            </div>
+
+            <nav class="navegacion">
+                <ul class="lista-navegacion">
+                    <li class="item-navegacion"><a href="Inicio.html" class="enlace-navegacion inicio">Inicio</a></li>
+                    <li class="item-navegacion"><a href="#" class="enlace-navegacion">Nosotros</a></li>
+                    <li class="item-navegacion"><a href="Producto.html" class="enlace-navegacion">Producto</a></li>
+                    <li class="item-navegacion"><a href="#" class="enlace-navegacion">Sostenibilidad</a></li>
+                    <li class="item-navegacion"><a href="#" class="enlace-navegacion">Blog</a></li>
+                    <li class="item-navegacion"><a href="Contacto.html" class="enlace-navegacion">Contacto</a></li>
+                    <li class="item-navegacion"> <img src="img/Carrito de compras.png" alt="Carrito de compras" class="icono-carrito-compras">   
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <section class="seccion-productos">
+    <div class="contenedor-titulo">
+      <h2>CAFÉ MOLIDO</h2>
+    </div>
+
+    <div class="barra-ordenar">
+      <span class="conteo-productos" id="conteo">2 productos</span>
+      <div class="ordenar-por">
+        <label for="ordenar">Ordenar por</label>
+        <select id="ordenar">
+          <option value="relevancia">Relevancia</option>
+          <option value="precio-asc">Precio: de menor a mayor</option>
+          <option value="precio-desc">Precio: de mayor a menor</option>
+          <option value="nombre-asc">Nombre: A-Z</option>
+          <option value="nombre-desc">Nombre: Z-A</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="rejilla-productos" id="rejilla">
+      <!-- Café chocolate -->
+      <div class="tarjeta-producto" data-id="chocolate" data-nombre="Café chocolate" data-precio="50000">
+        <a class="enlace-producto" href="cafe-chocolate.html">
+          <img class="imagen-producto" src="img/cafe.png" alt="Café chocolate">
+          <h3 class="nombre-producto">Café chocolate</h3>
+        </a>
+        <p class="precio-producto">$50.000</p>
+        <div class="acciones-producto">
+          <button class="btn-anadir" onclick="addDesdeCard('chocolate')">Añadir al carrito</button>
+          <a class="enlace-producto btn-comprar" href="cafe-chocolate.html">Comprar</a>
+        </div>
+      </div>
+
+      <!-- Café vainilla -->
+      <div class="tarjeta-producto" data-id="vainilla" data-nombre="Café vainilla" data-precio="60000">
+        <a class="enlace-producto" href="cafe-vainilla.html">
+          <img class="imagen-producto" src="img/cafe.png" alt="Café vainilla">
+          <h3 class="nombre-producto">Café vainilla</h3>
+        </a>
+        <p class="precio-producto">$60.000</p>
+        <div class="acciones-producto">
+          <button class="btn-anadir" onclick="addDesdeCard('vainilla')">Añadir al carrito</button>
+          <a class="enlace-producto btn-comprar" href="cafe-vainilla.html">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="seccion-recomendados">
+      <h2 class="titulo-recomendados">Recomendados</h2>
+      <div class="rejilla-recomendados">
+        <!-- Puedes duplicar/editar si luego agregas más -->
+        <div class="tarjeta-producto" data-id="bailys" data-nombre="Café bailys" data-precio="50000">
+          <a class="enlace-producto" href="cafe-chocolate.html">
+            <img class="imagen-producto" src="img/cafe.png" alt="Café bailys">
+            <h3 class="nombre-producto">Café bailys</h3>
+          </a>
+          <p class="precio-producto">$50.000</p>
+          <div class="acciones-producto">
+            <button class="btn-anadir" onclick="addDesdeCard('bailys')">Añadir al carrito</button>
+            <a class="enlace-producto btn-comprar" href="cafe-chocolate.html">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Icono flotante existente -->
+    <div class="contenedor-icono-flotante">
+      <img class="icono-flotante" src="img/img3.png" alt="Icono de auriculares">
+    </div>
+  </section>
+
+  <!-- Footer (igual al tuyo) -->
+  <footer class="pie-de-pagina">
+    <!-- … mantengo tu footer existente … -->
+  </footer>
+
+  
+</body>
+</html>

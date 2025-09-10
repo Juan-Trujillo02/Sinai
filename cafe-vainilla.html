@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café vainilla</title>
+  <link rel="stylesheet" href="css/Style.css"/>
+</head>
+<body>
+  <header class="cabecera">
+        <div class="contenedor-cabecera">
+
+            <div class="logo">
+                <img src="img/Logo.png" alt="Logo de Sinaí">
+            </div>
+
+            <div class="barra-busqueda">
+                <img src="img/Lupa.png" alt="Lupa" class="icono-busqueda">
+                <input type="text" placeholder="Buscar..." class="campo-busqueda">
+                <img src="img/Ajustes busqueda.png" alt="Ajustes de búsqueda" class="ajustes-busqueda">
+            </div>
+
+            <nav class="navegacion">
+                <ul class="lista-navegacion">
+                    <li class="item-navegacion"><a href="Inicio.html" class="enlace-navegacion inicio">Inicio</a></li>
+                    <li class="item-navegacion"><a href="#" class="enlace-navegacion">Nosotros</a></li>
+                    <li class="item-navegacion"><a href="Producto.html" class="enlace-navegacion">Producto</a></li>
+                    <li class="item-navegacion"><a href="#" class="enlace-navegacion">Sostenibilidad</a></li>
+                    <li class="item-navegacion"><a href="#" class="enlace-navegacion">Blog</a></li>
+                    <li class="item-navegacion"><a href="Contacto.html" class="enlace-navegacion">Contacto</a></li>
+                    <li class="item-navegacion"> <img src="img/Carrito de compras.png" alt="Carrito de compras" class="icono-carrito-compras">   
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <main class="contenido">
+    <section class="detalle">
+      <div class="foto">
+        <img src="img/cafe.png" alt="Café vainilla">
+      </div>
+
+      <div class="info">
+        <h1>Café vainilla</h1>
+        <div class="precio">$60.000</div>
+        <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit… Duis aute irure dolor in.”</p>
+
+        <div>
+          <strong>Tamaño:</strong>
+          <div class="tam" id="tamanos">
+            <button data-val="Una libra" class="activo">Una libra</button>
+            <button data-val="Media libra">Media libra</button>
+          </div>
+        </div>
+
+        <div style="margin:10px 0 16px;">
+          <div class="qty">
+            <button onclick="sumar(-1)">−</button>
+            <span id="cantidad">1</span>
+            <button onclick="sumar(1)">+</button>
+          </div>
+        </div>
+
+        <div class="acciones">
+          <button class="btn-sec" onclick="add('vainilla')">Añadir al carrito</button>
+          <button class="btn-prim" onclick="comprar('vainilla')">Comprar ahora</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
